@@ -1,0 +1,374 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #000;
+    color: #fff;
+}
+
+header img {
+    height: 60px;
+}
+
+header p {
+    color: #ffcc00; /* Yellow */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+header ul a:hover {
+    color: #ffcc00;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 50px;
+    padding: 50px 20px;
+}
+
+.illustration {
+    flex: 1;
+    max-width: 40%;
+}
+
+.illustration img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.intro {
+    flex: 1;
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 40px;
+    color: #222;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.SignUp, .SignIn {
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.SignUp {
+    background-color: #ffcc00;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.SignUp:hover {
+    background-color: #e6b800;
+}
+
+.SignIn {
+    color: #000;
+}
+
+.SignIn:hover {
+    color: #e6b800;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 60px;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-left, .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    min-width: 250px;
+}
+
+.footer-divider {
+    width: 2px;
+    background-color: white;
+    height: 80px;
+    opacity: 0.5;
+    margin: 0 20px;
+}
+
+/* Social Media Icons */
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+
+.footer-icons img:hover {
+    filter: invert(65%) sepia(100%) saturate(500%) hue-rotate(0deg);
+}
+
+/* Google Map */
+.footer-right iframe {
+    width: 250px;
+    height: 180px;
+    border-radius: 8px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left {
+        align-items: center;
+    }
+    
+    .footer-divider {
+        width: 80%;
+        height: 2px;
+        margin: 20px 0;
+    }
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    background-color: #ffcc00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.data {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.data h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.data p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.data h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .data-container {
+        flex-direction: column;
+    }
+    .data {
+        margin-bottom: 20px;
+    }
+}
+
+.sample-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 20px;
+}
+
+.sample {
+    flex: 1;
+    text-align: center;
+}
+
+.sample img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Center text with max width */
+.sample.center {
+    max-width: 40%;
+}
+
+/* Keep "Learn More" button as before */
+.LearnMore {
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s;
+    background-color: #ffcc00;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+}
+
+.LearnMore:hover {
+    background-color: #e6b800;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .sample-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sample.center {
+        max-width: 100%;
+    }
+}
+
+/* Teams Section */
+.teams-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* Curved Divider */
+.teams-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-radius: 0 0 50% 50%;
+}
+
+/* Teams Heading */
+.teams-heading h1 {
+    font-size: 36px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Team Cards */
+.teams-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.team {
+    background: #f4f4f4;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 350px;
+    min-width: 280px;
+}
+
+.team:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.team img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.team h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.team p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .teams-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .team {
+        max-width: 80%;
+    }
+}
+
+
+
+
+
+
